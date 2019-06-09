@@ -1,0 +1,14 @@
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\bin\Debug\MHCotton.Data.Test.dll.config
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\bin\Debug\MHCotton.Data.Test.dll
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\bin\Debug\MHCotton.Data.Test.pdb
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\bin\Debug\EntityFramework.dll
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\bin\Debug\MHCotton.Common.dll
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\bin\Debug\MHCotton.Common.pdb
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\bin\Debug\EntityFramework.xml
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\obj\Debug\MHCotton.Data.csprojAssemblyReference.cache
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\obj\Debug\MHCotton.Data.csproj.CoreCompileInputs.cache
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\obj\Debug\MHCotton.Data.csproj.CopyComplete
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\obj\Debug\MHCotton.Data.Test.dll
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Data\obj\Debug\MHCotton.Data.Test.pdb

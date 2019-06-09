@@ -1,0 +1,163 @@
+﻿﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="//fonts.googleapis.com/css?family=Hind" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="~/Content/css/LoginStyle.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/navStyle.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/sideNav.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/knockout-3.5.0.js"></script>
+    <script src="~/Scripts/jquery.blockUI.js"></script>
+    <script src="~/Scripts/notify.js"></script>
+
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+        $("#menu-toggle-2").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled-2");
+            $('#menu ul').hide();
+        });
+
+        function initMenu() {
+            $('#menu ul').hide();
+            $('#menu ul').children('.current').parent().show();
+            //$('#menu ul:first').show();
+            $('#menu li a').click(
+                function () {
+                    var checkElement = $(this).next();
+                    if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+                        return false;
+                    }
+                    if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+                        $('#menu ul:visible').slideUp('normal');
+                        checkElement.slideDown('normal');
+                        return false;
+                    }
+                }
+            );
+        }
+        $(document).ready(function () {
+            initMenu();
+        });
+    </script>
+
+
+
+
+
+    <style>
+
+        #notifications {
+            cursor: pointer;
+            position: fixed;
+            left: 500px;
+            z-index: 9999;
+            top: 0px;
+            margin-top: 22px;
+            margin-left: 100px;
+            max-width: 300px;
+        }
+
+        .lds-ring {
+            display: inline-block;
+            position: relative;
+            width: 64px;
+            height: 64px;
+        }
+
+            .lds-ring div {
+                box-sizing: border-box;
+                display: block;
+                position: absolute;
+                width: 51px;
+                height: 51px;
+                margin: 6px;
+                border: 6px solid #f70c0c;
+                border-radius: 50%;
+                animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+                border-color: #f70c0c transparent transparent transparent;
+            }
+
+                .lds-ring div:nth-child(1) {
+                    animation-delay: -0.45s;
+                }
+
+                .lds-ring div:nth-child(2) {
+                    animation-delay: -0.3s;
+                }
+
+                .lds-ring div:nth-child(3) {
+                    animation-delay: -0.15s;
+                }
+
+        @@keyframes lds-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        section {
+            padding: 10px 0;
+            float: left;
+            width: 100%
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-expand-md custom-navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><span><img src="https://i.imgur.com/TpWQH9c.png" height="24" /></span> MHCottons<span class="text-danger"> P </span>Ltd</a>
+            </div>
+            <div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/Home/Index"><i class="fa fa-comments" aria-hidden="true"></i> Entries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/Upload"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Upload</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-plug" aria-hidden="true"></i> Extensions</a></li>
+                    <li class="nav-item"><button type="button" class="btn btn-success btn-margin-right navbar-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign in</button></li>
+                    <li class="nav-item"><button type="button" class="btn btn-danger btn-margin-right navbar-btn" onclick="window.location.href = '@Url.Action("Index","Login")'">Logout</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <section class="banner-sec" style="background-color:#2C777C;">
+        <div class="container-fluid">
+            <div id="notifications">
+            </div>
+            <div id="spinner" style="display:none;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+            <div>
+                <div>
+                    <div class="col-md-12" style="background-color:#ffffff;height:580px;">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="action-sec" style="height:60px;">
+        <div class="container">
+            <div class="action-box text-center"></div>
+        </div>
+    </section>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿<div id="loginHtml">
+    <fieldset>
+        @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+            <br />
+            <p class="text-uppercase"> Login using your account: </p>
+            <hr />
+            <div class="form-group">
+                <input type="email" name="username" id="loginID" class="form-control input-lg" placeholder="User Name" data-bind="value:LoginID">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" data-bind="value:Password">
+            </div>
+            <div>
+                <input type="submit" class="btn btn-success" value="Sign In" onclick="mc.login.loginSubmit()">
+            </div>
+            <div class="form-group">
+                <div>
+                    <a href="#" onclick="mc.login.forgotPassword()">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">User Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="email" name="username" id="loginID" class="form-control input-lg" placeholder="User Name" data-bind="value:LoginID">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="mc.login.getPassword()">Retrieve Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/MHCotton/login.js"></script>
+<script>
+    mc.login.urls.GetLoginSubmitUrl = '@Url.Action("Login", "Login")';
+    mc.login.urls.GetForgotPasswordUrl = '@Url.Action("ForgotPassword", "Login")';
+    $(function () {
+        mc.login.load();
+    });
+</script>

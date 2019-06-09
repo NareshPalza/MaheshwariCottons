@@ -1,0 +1,14 @@
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\obj\Debug\MHCotton.Service.csprojAssemblyReference.cache
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\obj\Debug\MHCotton.Service.csproj.CoreCompileInputs.cache
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\bin\Debug\MHCotton.Service.dll
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\bin\Debug\MHCotton.Service.pdb
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\bin\Debug\MHCotton.Common.dll
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\bin\Debug\MHCotton.Data.Test.dll
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\bin\Debug\EntityFramework.dll
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\bin\Debug\MHCotton.Common.pdb
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\bin\Debug\MHCotton.Data.Test.pdb
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\bin\Debug\MHCotton.Data.Test.dll.config
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\bin\Debug\EntityFramework.xml
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\obj\Debug\MHCotton.Service.csproj.CopyComplete
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\obj\Debug\MHCotton.Service.dll
+C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\obj\Debug\MHCotton.Service.pdb
