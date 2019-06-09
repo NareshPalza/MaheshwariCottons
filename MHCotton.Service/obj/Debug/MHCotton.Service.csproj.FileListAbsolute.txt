@@ -12,3 +12,17 @@ C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\bin\Debug\EntityFramework
 C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\obj\Debug\MHCotton.Service.csproj.CopyComplete
 C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\obj\Debug\MHCotton.Service.dll
 C:\Users\Naresh\source\repos\MHCotton\MHCotton.Service\obj\Debug\MHCotton.Service.pdb
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\bin\Debug\MHCotton.Service.dll
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\bin\Debug\MHCotton.Service.pdb
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\bin\Debug\MHCotton.Common.dll
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\bin\Debug\MHCotton.Data.Test.dll
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\bin\Debug\EntityFramework.dll
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\bin\Debug\MHCotton.Common.pdb
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\bin\Debug\MHCotton.Data.Test.pdb
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\bin\Debug\MHCotton.Data.Test.dll.config
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\bin\Debug\EntityFramework.xml
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\obj\Debug\MHCotton.Service.csprojAssemblyReference.cache
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\obj\Debug\MHCotton.Service.csproj.CoreCompileInputs.cache
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\obj\Debug\MHCotton.Service.csproj.CopyComplete
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\obj\Debug\MHCotton.Service.dll
+F:\Work\Practice\Git\MHCotton\git\MaheshwariCottons\MHCotton.Service\obj\Debug\MHCotton.Service.pdb
